@@ -1,0 +1,49 @@
+
+
+.open-sans-primary {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+#mainNav.navbar-shrink {
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+}
+
+.active{
+  color: #fd6e0a;
+}
+
+ /* Animation for opening the menu */
+ @keyframes slideDown {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for closing the menu */
+@keyframes slideUp {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.menu-open {
+  animation: slideDown 2s ease-in-out forwards;
+}
+
+.menu-close {
+  animation: slideUp 2s ease-in-out forwards;
+}
